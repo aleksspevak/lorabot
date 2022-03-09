@@ -46,6 +46,10 @@ created in Python.
 7) To get analytics, make some kind of conditional branching, for example in a file telegram_bot.py a condition has been made to receive a message with a keyword, after that the password is checked and after that the bot owner gets access to analytics:<br/>
    ![analytics](images/analytics.png)<br/>
    ![analytics_2_step](images/analytics_2_step.png)<br/>
+## How use another PostgreSQL database
+If you have your own database or want to deploy it in the cloud as a SaaS, you need to create a user yourself, run the create_tables.sql file and put credentials in the .env file.
+## How set password to your analytics
+You only need to change the password in the ANALYTICS_PASSWORD variable in the .env file. By default, the password is set to lorabot.
 ## Analytics metrics
 Below describe all functions for analytic in LoraBot.<br/>
 Notice that some function has parameters to set period of analytics,volume of returning data or to set message/event type. 

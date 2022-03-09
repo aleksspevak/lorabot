@@ -1,0 +1,24 @@
+version: '3.2'
+    
+services:      
+  postgres:
+    image: postgres:13.1
+    restart: always
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    ports:
+      - ${POSTGRES_PORT}:5432
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./database/data:/var/lib/postgresql/data/pgdata
+      - ./database/logs:/var/lib/postgresql/data/log
+      - ./lorabot/sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+    command: >
+     postgres
+       -c listen_addresses=*
+       -c logging_collector=on
+       -c log_destination=stderr
+       -c max_connections=200

@@ -2,6 +2,8 @@
 LoraBot - Tool for analyzing activity in chatbots (Telegram, Slack, Discord, Vk, WhatsApp, Viber and all other) 
 created in Python.<br/>
 ![lorabot](images/lorabot.png)<br/>
+Article about it in English: https://medium.com/@alekskram/analytics-of-chatbots-in-python-e044024c0db7 </br>
+Article about it in Russian: https://habr.com/ru/post/653535/
 ## Project structure
 - lorabot directory with code that will help you in your analytics
 - docker-compose.yml for create database for analytics near your Project

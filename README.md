@@ -38,6 +38,8 @@ created in Python.<br/>
    lora_bot.user(USER_ID)
    #to track commands, menu messages, messages
    lora_bot.message(TEXT, TEXT_TYPE, USER_ID)
+   #to track events
+   lora_bot.event(EVENT, EVENT_TYPE, USER_ID)
    #to track review 
    lora_bot.review(REVIEW, USER_ID)
    #to track bot assessment

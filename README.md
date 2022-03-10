@@ -145,7 +145,7 @@ bot.send_photo(message.chat.id, photo)
 There is a function to which you can pass an SQL query directly from the bot or put your query in it. This is **sql_query** function and it accepts only one parameter - a query.<br/>
 ```python
    info = lora_bot.sql_query(YOUR_SQL)
-   bot.send_message(message.chat.id,, info, reply_markup=your_markup)
+   bot.send_message(message.chat.id, info, reply_markup=your_markup)
 ```
 ![sql](images/sql.png)<br/>
 <br/>

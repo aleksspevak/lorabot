@@ -43,7 +43,7 @@ created in Python.<br/>
    #to track review 
    lora_bot.review(REVIEW, USER_ID)
    #to track bot assessment
-   lora_bot.assessment(RATING_IN_INT_FORMAT), USER_ID)
+   lora_bot.assessment(RATING_IN_INT_FORMAT, USER_ID)
    ``` 
    Great! Now you get analytics from your bot. 
 7) To get analytics, make some kind of conditional branching, for example in a file telegram_bot.py a condition has been made to receive a message with a keyword, after that the password is checked and after that the bot owner gets access to analytics:<br/>

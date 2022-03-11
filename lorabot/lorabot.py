@@ -4,7 +4,6 @@ import os
 from dotenv import load_dotenv
 import plotly.express as px
 from .lorabot_sql import *
-import sqlite3
 from PIL import Image, ImageDraw
 
 

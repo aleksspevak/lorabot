@@ -37,7 +37,7 @@ Article about it in Russian: https://habr.com/ru/post/653535/
 6) Set where you need LoraBot functions, to start getting information for analytics as in examples:
    ```python
    #to track new users, for example, in a telegram, it is appropriate to put a function in the processing functions of the /start command
-   lora_bot.user(USER_ID)
+   lora_bot.user(USER_ID, NAME_OF_REGION)
    #to track commands, menu messages, messages
    lora_bot.message(TEXT, TEXT_TYPE, USER_ID)
    #to track events
